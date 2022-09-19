@@ -16,7 +16,7 @@ export default function Footer() {
   return (
     <FooterStyle
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1, transition: { duration: 1.5, delay: 2 } }}
+      animate={{ opacity: 1, transition: { duration: 0.5, delay: 2 } }}
     >
       <FooterStyleInner>
         <h1>LIGHTHOUSE</h1>
