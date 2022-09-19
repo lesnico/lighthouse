@@ -9,9 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@stripe/react-stripe-js": "^1.10.0",
+    "@stripe/stripe-js": "^1.36.0",
+    "framer-motion": "^7.2.1",
+    "graphql": "^16.6.0",
     "next": "12.2.5",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-hot-toast": "^2.4.0",
+    "react-icons": "^4.4.0",
+    "react-responsive-carousel": "^3.2.23",
+    "react-slick": "^0.29.0",
+    "react-youtube": "^10.0.0",
+    "stripe": "^10.10.0",
+    "styled-components": "^5.3.5",
+    "urql": "^2.2.3"
   },
   "devDependencies": {
     "eslint": "8.23.0",
