@@ -77,6 +77,15 @@ export const NavItems = styled.div`
     top: -25%;
     pointer-events: none;
   }
+  @media (max-width: 750px) {
+    svg {
+      font-size: 2rem;
+    }
+    span {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
 `;
 
 export const NavBottom = styled.div`
