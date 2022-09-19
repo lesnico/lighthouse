@@ -40,6 +40,8 @@ export default function Footer() {
             <Link href={"/"}>Conditions de vente générales</Link>
             <span> | </span>
             <Link href={"/"}>Politique de confidentialité</Link>
+            <span> | </span>
+            <Link href={"/"}>Retourner en haut</Link>
           </div>
         </FooterCredits>
       </FooterStyleInner>
