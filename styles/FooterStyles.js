@@ -16,6 +16,9 @@ export const FooterStyleInner = styled(motion.div)`
   padding: 2rem 0rem;
   display: flex;
   flex-direction: column;
+  @media (max-width: 750px) {
+    padding: 2rem 0rem 4rem 0rem;
+  }
   h1 {
     font-size: 3.5rem;
     color: #464646;
