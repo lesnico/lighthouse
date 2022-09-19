@@ -114,4 +114,16 @@ export const Logo = styled(motion.div)`
       height: 10vh;
     }
   }
+  @media (max-width: 750px) {
+    h1 {
+      font-size: 3rem;
+      color: #464646;
+      letter-spacing: -3px;
+    }
+    h3 {
+      font-size: 1.3rem;
+      font-weight: normal;
+      letter-spacing: -1px;
+    }
+  }
 `;
