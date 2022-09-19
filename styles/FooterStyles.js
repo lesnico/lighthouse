@@ -50,6 +50,7 @@ export const FooterSocial = styled(motion.div)`
     cursor: pointer;
   }
   div {
+    display: flex;
     gap: 1rem;
   }
   @media (max-width: 750px) {
