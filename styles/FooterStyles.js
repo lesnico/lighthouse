@@ -49,6 +49,14 @@ export const FooterSocial = styled(motion.div)`
   svg {
     cursor: pointer;
   }
+  div {
+    gap: 1rem;
+  }
+  @media (max-width: 750px) {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
 `;
 
 export const FooterCredits = styled(motion.div)`
