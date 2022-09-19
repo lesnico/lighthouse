@@ -7,6 +7,7 @@ export const SuccessStyle = styled(motion.div)`
   justify-content: center;
   align-items: center;
   margin: 2rem 0rem;
+  min-height: 60vh;
 `;
 
 export const SuccessStyleInner = styled(motion.div)`
