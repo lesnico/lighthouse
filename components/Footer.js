@@ -14,7 +14,10 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <FooterStyle>
+    <FooterStyle
+      initial={{ opacity: 0 }}
+      visible={{ opacity: 1, transition: { duration: 4 } }}
+    >
       <FooterStyleInner>
         <h1>LIGHTHOUSE</h1>
         <h3>RECORD SHOP</h3>
