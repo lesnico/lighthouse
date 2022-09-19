@@ -52,6 +52,9 @@ export const FooterSocial = styled(motion.div)`
   div {
     display: flex;
     gap: 1rem;
+    span {
+      cursor: pointer;
+    }
   }
   @media (max-width: 750px) {
     flex-direction: column;

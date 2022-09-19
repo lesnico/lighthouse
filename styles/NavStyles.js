@@ -76,6 +76,7 @@ export const NavItems = styled.div`
     right: 0%;
     top: -25%;
     pointer-events: none;
+    cursor: pointer;
   }
   @media (max-width: 750px) {
     svg {
