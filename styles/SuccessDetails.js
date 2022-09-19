@@ -70,7 +70,7 @@ export const SuccessProducts = styled(motion.div)`
 `;
 
 export const KeepShopping = styled(motion.div)`
-  width: 30%;
+  width: 100%;
   background: var(--special);
   display: flex;
   justify-content: space-between;

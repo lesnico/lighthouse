@@ -56,6 +56,12 @@ export const ProductMedias = styled(motion.div)`
     .carousel .thumbs {
       display: none;
     }
+    .carousel .control-next.control-arrow:before {
+      display: none;
+    }
+    .carousel .control-prev.control-arrow:before {
+      display: none;
+    }
   }
 `;
 
