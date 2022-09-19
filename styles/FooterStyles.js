@@ -8,6 +8,7 @@ export const FooterStyle = styled(motion.div)`
   display: flex;
   justify-content: center;
   align-items: center;
+  border-top: 1px solid var(--special);
 `;
 export const FooterStyleInner = styled(motion.div)`
   width: 88%;
