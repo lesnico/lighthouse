@@ -12,8 +12,11 @@ export const GalleryCont = styled.div`
 
 export const Gallery = styled(motion.div)`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
   grid-gap: 2rem;
   position: relative;
   width: 88%;
+  @media (max-width: 700px) {
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  }
 `;
