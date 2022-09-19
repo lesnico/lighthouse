@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps, router }) {
       <Provider value={client}>
         <Toaster />
         <Nav />
-        {router2.asPath == "/" && <SortArea />}
+        {router2.asPath == "/" || (router2.asPath == "/#" && <SortArea />)}
         <motion.div
           key={router.route}
           initial="initial"
