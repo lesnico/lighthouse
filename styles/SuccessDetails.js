@@ -71,7 +71,7 @@ export const SuccessProducts = styled(motion.div)`
 `;
 
 export const KeepShopping = styled(motion.div)`
-  width: 100%;
+  width: 30%;
   background: var(--special);
   display: flex;
   justify-content: space-between;
@@ -89,5 +89,8 @@ export const KeepShopping = styled(motion.div)`
     &:hover {
       color: var(--primary);
     }
+  }
+  @media (max-width: 750px) {
+    width: 100%;
   }
 `;
