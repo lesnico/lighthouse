@@ -55,4 +55,11 @@ export const SearchInput = styled(motion.div)`
   @media (max-width: 1085px) {
     justify-content: space-between;
   }
+  @media (max-width: 750px) {
+    select {
+      border-radius: 2rem;
+      padding: 1rem 2rem;
+      font-size: 1.5rem;
+    }
+  }
 `;
