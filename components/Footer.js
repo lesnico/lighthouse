@@ -36,7 +36,7 @@ export default function Footer() {
             </Link>
           </div>
           <div>
-            <Link href={"#"}>Retourner en haut</Link>
+            <span onClick={window.scrollTo(0, 0)}>Retourner en haut</span>
           </div>
         </FooterSocial>
         <div className="bar"></div>
