@@ -14,6 +14,9 @@ export const SortStyled = styled(motion.div)`
   margin-bottom: 2rem;
   z-index: 100;
   position: relative;
+  @media (max-width: 700px) {
+    height: 10vh;
+  }
 `;
 
 export const SortStyledInner = styled(motion.div)`
