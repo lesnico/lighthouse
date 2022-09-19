@@ -36,7 +36,7 @@ export default function Footer() {
             </Link>
           </div>
           <div>
-            <Link href={"/"}>Retourner en haut</Link>
+            <Link href={"#"}>Retourner en haut</Link>
           </div>
         </FooterSocial>
         <div className="bar"></div>
