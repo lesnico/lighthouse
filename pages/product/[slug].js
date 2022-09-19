@@ -94,7 +94,7 @@ export default function ProductDetails() {
             {image.data.length > 1 ? (
               <Carousel
                 autoPlay={false}
-                showArrows={false}
+                showArrows={true}
                 showThumbs={true}
                 infiniteLoop={false}
                 emulateTouch={true}
