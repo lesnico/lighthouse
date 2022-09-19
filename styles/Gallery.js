@@ -7,7 +7,7 @@ export const GalleryCont = styled.div`
   align-items: center;
   width: 100%;
   margin-bottom: 2rem;
-  /* min-height: 100vh; */
+  min-height: 100vh;
 `;
 
 export const Gallery = styled(motion.div)`
