@@ -16,6 +16,7 @@ export const Gallery = styled(motion.div)`
   grid-gap: 2rem;
   position: relative;
   width: 88%;
+  min-height: 100vh;
   @media (max-width: 700px) {
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
   }
