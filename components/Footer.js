@@ -24,15 +24,20 @@ export default function Footer() {
         <p>105 Rue Pierre Corneille</p>
         <p>69003 - Lyon, France</p>
         <FooterSocial>
-          <Link href={"/"}>
-            <BsFacebook />
-          </Link>
-          <Link href={"/"}>
-            <BsInstagram />
-          </Link>
-          <Link href={"/"}>
-            <BsYoutube />
-          </Link>
+          <div>
+            <Link href={"/"}>
+              <BsFacebook />
+            </Link>
+            <Link href={"/"}>
+              <BsInstagram />
+            </Link>
+            <Link href={"/"}>
+              <BsYoutube />
+            </Link>
+          </div>
+          <div>
+            <Link href={"/"}>Retourner en haut</Link>
+          </div>
         </FooterSocial>
         <div className="bar"></div>
         <FooterCredits>
@@ -43,8 +48,6 @@ export default function Footer() {
             <Link href={"/"}>Conditions de vente générales</Link>
             <span> | </span>
             <Link href={"/"}>Politique de confidentialité</Link>
-            <span> | </span>
-            <Link href={"/"}>Retourner en haut</Link>
           </div>
         </FooterCredits>
       </FooterStyleInner>
