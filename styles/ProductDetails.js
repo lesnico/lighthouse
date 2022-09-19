@@ -52,13 +52,8 @@ export const ProductMedias = styled(motion.div)`
   .carousel .control-prev.control-arrow:before {
     border-right: 8px solid #535353;
   }
-  @media (max-width: 556px) {
-    flex: 1;
+  @media (max-width: 1085px) {
     .carousel .thumbs {
-      white-space: normal !important;
-    }
-    .carousel .control-next.control-arrow:before,
-    .control-prev.control-arrow:before {
       display: none;
     }
   }
