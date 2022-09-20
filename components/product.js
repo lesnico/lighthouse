@@ -28,8 +28,14 @@ export default function Product({ product }) {
   return (
     <Link scroll={false} href={`/product/${slug}`}>
       <ProductStyles whileHover="visible" variants={container}>
-        <motion.div variants={Content}>
-          <img src={image.data[0].attributes.formats.small.url} alt="" />
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          variants={Content}
+        >
+          {image.data[0] && (
+            <img src={image.data[0].attributes.formats.small.url} alt="" />
+          )}
           <h2>
             {artist.data.length === 1
               ? artist.data[0].attributes.artist_name + " - " + title

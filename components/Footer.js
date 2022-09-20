@@ -14,10 +14,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <FooterStyle
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1, transition: { duration: 0.5, delay: 1 } }}
-    >
+    <FooterStyle initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
       <FooterStyleInner>
         <h1>LIGHTHOUSE</h1>
         <h3>RECORD SHOP</h3>

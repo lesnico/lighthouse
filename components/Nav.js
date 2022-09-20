@@ -48,7 +48,7 @@ export default function Nav() {
 
   return (
     <>
-      <NavStyles initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+      <NavStyles initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
         <NavStylesInner layout>
           {/* <ul>
             <li>Accueil</li>
