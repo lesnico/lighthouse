@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export const SortStyled = styled(motion.div)`
   width: 100%;
   height: 5vh;
-  background: var(--special);
+
   gap: 2rem;
   display: flex;
   justify-content: center;
@@ -21,6 +21,8 @@ export const SortStyled = styled(motion.div)`
 
 export const SortStyledInner = styled(motion.div)`
   width: 88%;
+  background: var(--special);
+  border-radius: 1rem;
 `;
 
 export const SearchInput = styled(motion.div)`
