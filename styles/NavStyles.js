@@ -115,6 +115,7 @@ export const Logo = styled(motion.div)`
     font-size: 1.8rem;
     font-weight: normal;
     letter-spacing: -1px;
+    color: var(--action);
   }
   img {
     height: 10vh;

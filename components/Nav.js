@@ -43,7 +43,6 @@ export default function Nav() {
     visible: {
       y: 0,
       opacity: 1,
-      color: "#8ecae6",
     },
   };
 

@@ -9,6 +9,7 @@ body {
   --primary: #2d2d2d;
   --secondary: #535353;
   --special: #8ecae6;
+  --action: #e29097;
   scrollbar-gutter: stable;
 }
 
