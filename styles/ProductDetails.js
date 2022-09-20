@@ -119,8 +119,8 @@ export const ProductInfo = styled.div`
 
 export const Buy = styled(motion.div)`
   width: 30%;
-  background: var(--special);
-  color: var(--primary);
+  background: var(--action);
+  color: white;
   font-size: 1.5rem;
   display: flex;
   justify-content: space-between;

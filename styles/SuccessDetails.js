@@ -72,7 +72,7 @@ export const SuccessProducts = styled(motion.div)`
 
 export const KeepShopping = styled(motion.div)`
   width: 30%;
-  background: var(--special);
+  background: var(--action);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -80,8 +80,9 @@ export const KeepShopping = styled(motion.div)`
   padding: 1rem 1.5rem;
   cursor: pointer;
   border: none;
+  color: white;
   span {
-    color: var(--primary);
+    color: white;
     font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: normal;

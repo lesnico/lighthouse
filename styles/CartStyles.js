@@ -87,7 +87,7 @@ export const EmptyStyle = styled(motion.div)`
 
 export const Checkout = styled(motion.div)`
   width: 100%;
-  background: var(--special);
+  background: var(--action);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -95,14 +95,15 @@ export const Checkout = styled(motion.div)`
   padding: 1rem 1.5rem;
   cursor: pointer;
   border: none;
+  color: white;
   span {
-    color: var(--primary);
+    color: white;
     font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: normal;
     gap: 0.5rem;
     &:hover {
-      color: var(--primary);
+      color: white;
     }
   }
 `;
