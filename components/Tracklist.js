@@ -8,9 +8,11 @@ export default function Tracklist({ tracklist }) {
       <TracklistStyled>
         <h3>Tracklist :</h3>
 
-        {tracklist.map((trackItem) => (
+        {tracklist.map((trackItem, k) => (
           <>
-            {trackItem.SIDE && <p>{trackItem.SIDE.replace("_", " ")}</p>}
+            {trackItem.SIDE && (
+              <p key={k}>{trackItem.SIDE.replace("_", " ")}</p>
+            )}
             {trackItem.tracklist2.map((trackItem2, i) => (
               <ul>
                 <li key={i}>
