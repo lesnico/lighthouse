@@ -5,25 +5,33 @@ import { FaYoutube } from "react-icons/fa";
 export default function Tracklist({ tracklist }) {
   return (
     <>
-      <h3>TRACKLISTING</h3>
       <TracklistStyled>
-        <ul>
-          {tracklist.map((trackItem, i) => (
-            <li key={i}>
-              <div>
-                <span>{i + 1}</span>
-                <span>{trackItem.track}</span>
-              </div>
-              {trackItem.video && (
-                <Link href={trackItem.video}>
-                  <span>
-                    <FaYoutube />
-                  </span>
-                </Link>
-              )}
-            </li>
-          ))}
-        </ul>
+        <h3>Tracklist :</h3>
+
+        {tracklist.map((trackItem) => (
+          <>
+            {trackItem.SIDE && <p>{trackItem.SIDE.replace("_", " ")}</p>}
+            {trackItem.tracklist2.map((trackItem2, i) => (
+              <ul>
+                <li key={i}>
+                  <div>
+                    <span>
+                      {trackItem.SIDE.replace("SIDE_", " ") + (i + 1)}
+                    </span>
+                    <span>{trackItem2.track}</span>
+                  </div>
+                  {trackItem2.video && (
+                    <Link href={trackItem2.video}>
+                      <span>
+                        <FaYoutube />
+                      </span>
+                    </Link>
+                  )}
+                </li>
+              </ul>
+            ))}
+          </>
+        ))}
       </TracklistStyled>
     </>
   );

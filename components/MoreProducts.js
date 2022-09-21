@@ -5,7 +5,6 @@ import {
   GalleryArtist,
 } from "../styles/ProductDetails";
 import { ProductStyles } from "../styles/ProductStyle";
-import { BsVinylFill } from "react-icons/bs";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
@@ -33,9 +32,7 @@ export default function MoreProducts({ artist, title }) {
     <MoreProductsStyled>
       <MoreProductsInner>
         <MoreProductTitle>
-          <h3>
-            <BsVinylFill /> Autres produits par {artist.artist_name}:
-          </h3>
+          <h3>Autres produits par {artist.artist_name} :</h3>
         </MoreProductTitle>
         <GalleryArtist>
           {artist.products.data.map((otherWork) => {

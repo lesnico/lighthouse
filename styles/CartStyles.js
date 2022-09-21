@@ -92,10 +92,11 @@ export const Checkout = styled(motion.div)`
   justify-content: space-between;
   align-items: center;
   margin: 1rem 0rem 0rem 0rem;
-  padding: 1rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   cursor: pointer;
   border: none;
   color: white;
+  border-radius: 0.8rem;
   span {
     color: white;
     font-size: 1.5rem;

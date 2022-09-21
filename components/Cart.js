@@ -162,10 +162,7 @@ export default function Cart() {
               layout
             >
               <span>Valider le panier</span>
-              <span>
-                {totalPrice.toFixed(2) + " € "}
-                <BsFillCartCheckFill />
-              </span>
+              <span>{totalPrice.toFixed(2) + " € "}</span>
             </Checkout>
           )}
           <CartCloseBtn

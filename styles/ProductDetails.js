@@ -2,148 +2,134 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 export const DetailsStyle = styled(motion.div)`
+  margin-top: 2rem;
+  width: 100%;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 2rem 0rem;
-  width: 100%;
-  min-height: 65vh;
-  a {
-    transition: color 0.3s ease;
-    text-decoration: underline;
-    font-weight: 500;
-  }
-  a:hover {
-    color: var(--special);
-  }
 `;
 
 export const DetailsStyleInner = styled(motion.div)`
   width: 88%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 2rem;
-  flex-wrap: wrap;
-  @media (max-width: 1085px) {
-    flex-direction: column;
-  }
-`;
-
-export const ProductMedias = styled(motion.div)`
-  flex: 0.5;
-  background-color: white;
-  border-radius: 1rem;
-  padding: 2rem;
-  img,
-  li > img {
-    width: 100% !important;
-    height: 100%;
-    object-fit: cover;
-  }
-  .carousel .thumbs-wrapper {
-    margin: 1rem 0rem;
-    cursor: pointer;
-  }
-
-  .carousel .control-next.control-arrow:before {
-    border-left: 8px solid #535353;
-  }
-  .carousel .control-prev.control-arrow:before {
-    border-right: 8px solid #535353;
-  }
-  @media (max-width: 1085px) {
-    .carousel .thumbs {
-      display: none;
-    }
-    .carousel .control-next.control-arrow:before {
-      display: none;
-    }
-    .carousel .control-prev.control-arrow:before {
-      display: none;
-    }
-  }
-`;
-
-export const ProductInfo = styled.div`
-  flex: 1;
   height: 100%;
-  color: #535353;
-  background-color: white;
-  border-radius: 1rem;
-  padding: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   h1 {
-    letter-spacing: 0.2rem;
-    font-weight: normal;
+    font-family: "Signika", sans-serif;
     font-size: 2.6rem;
-    display: flex;
-    flex-direction: column;
-    text-transform: uppercase;
-    span:first-child {
-      color: #808080;
-    }
+    letter-spacing: 2%;
+    font-weight: 700;
+    color: #2d2d2d;
+    text-transform: capitalize;
+  }
+  h2 {
+    font-family: "Signika", sans-serif;
+    font-size: 2rem;
+    letter-spacing: 2%;
+    font-weight: 400;
+    color: #808080;
+    padding: 0 0 1rem 0;
   }
   h3 {
-    font-weight: normal;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    color: var(--primary);
-    letter-spacing: 0.2rem;
-    margin: 2rem 0rem;
-  }
-  ul.product-infos-list {
-    padding: 1rem 0rem 2rem 0rem;
-    list-style: none;
-    display: flex;
-    gap: 0.5rem;
-    flex-wrap: wrap;
-    color: #808080;
-    li {
-      font-size: 1.2rem;
-
-      text-transform: uppercase;
-    }
+    font-family: "Signika", sans-serif;
+    font-size: 2rem;
+    letter-spacing: 2%;
+    font-weight: 700;
+    color: #2d2d2d;
+    padding: 0 0 1rem 0;
   }
   p {
-    font-size: 1.4rem;
-    font-weight: 300;
+    font-size: 1.5rem;
+    letter-spacing: 2%;
+    font-weight: 400;
+    color: #808080;
     text-align: justify;
   }
-  @media (max-width: 1085px) {
-    width: 100%;
+  .tracklist-flex-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 4rem;
+    @media (max-width: 1120px) {
+      padding: 0rem;
+    }
+    .empty {
+      flex: 0.5;
+      width: 40%;
+      min-height: 10vh;
+      @media (max-width: 1120px) {
+        display: none;
+      }
+    }
   }
 `;
 
-export const Buy = styled(motion.div)`
-  width: 30%;
-  background: var(--action);
-  color: white;
-  font-size: 1.5rem;
+export const AlbumInfoCont = styled(motion.div)`
+  width: 100%;
+  min-height: 20vh;
+  background-color: #e1eff7;
+  border-radius: 0.8rem;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin: 1rem 0rem 0rem 0rem;
-  text-transform: uppercase;
-  padding: 1rem 1.5rem;
-  cursor: pointer;
-  @media (max-width: 1550px) {
-    width: 50%;
+  padding: 4rem;
+  @media (max-width: 1120px) {
+    flex-direction: column;
   }
-  @media (max-width: 1180px) {
-    width: 70%;
+  @media (max-width: 750px) {
+    padding: 2rem;
   }
-  @media (max-width: 1015px) {
-    width: 100%;
+  @media (max-width: 500px) {
+    padding: 0rem;
+  }
+`;
+
+export const Cover = styled(motion.div)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  img {
+    width: 35rem;
+    height: 35rem;
+    border-radius: 0.8rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    @media (max-width: 1120px) {
+      width: 60%;
+      height: 60%;
+      margin: 4rem 0rem;
+    }
+    @media (max-width: 750px) {
+      width: 100%;
+      height: 100%;
+    }
+  }
+`;
+
+export const AlbumInfo = styled(motion.div)`
+  flex: 0.5;
+  background-color: white;
+  border-radius: 0.8rem;
+
+  min-height: 10rem;
+  padding: 2rem;
+  @media (max-width: 1400px) {
+    flex: 1;
   }
 `;
 
 export const Quantity = styled.div`
+  padding: 2rem 0rem;
+  font-size: 2rem;
   display: flex;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-family: "Signika", sans-serif;
+  span {
+    color: #2d2d2d;
+    font-weight: 700;
+  }
   button {
     background: transparent;
     border: none;
@@ -154,60 +140,108 @@ export const Quantity = styled.div`
   }
   p {
     width: 1rem;
+    font-size: 2rem;
     text-align: center;
+    color: #2d2d2d;
   }
-  span {
-    color: var(--secondary);
-  }
+
   svg {
     color: var(--special);
   }
 `;
 
-export const ProductVideo = styled(motion.div)`
-  .iframe {
-    background-color: white;
-    padding: 1rem;
-    border-radius: 1rem;
-    width: 100%;
-    height: 85vh;
+export const Buy = styled(motion.div)`
+  width: 50%;
+  background: var(--action);
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0rem 0rem 2rem 0rem;
+  text-transform: uppercase;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  border-radius: 0.8rem;
+  @media (max-width: 1760px) {
+    width: 70%;
+  }
+  @media (max-width: 570px) {
+    width: 70%;
+  }
+`;
+
+export const TracklistStyled = styled(motion.div)`
+  padding: 2rem 0rem 0rem 0rem;
+  flex: 1;
+  font-size: 1.5rem;
+  p {
+    padding: 1rem 0rem;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #cecece;
+    list-style: none;
+  }
+  li {
+    border-top: 1px solid #cecece;
+    padding: 1rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div {
+      display: flex;
+      gap: 1rem;
+    }
+    svg {
+      color: #2d2d2d;
+      font-size: 2rem;
+      cursor: pointer;
+      transition: color, 0.2s ease;
+      &:hover {
+        color: var(--special);
+      }
+    }
+  }
+  span:nth-child(1) {
+    font-weight: bold;
   }
 `;
 
 export const MoreProductsStyled = styled(motion.div)`
-  width: 100%;
+  /* width: 100%;
   min-height: 10vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 `;
 
 export const MoreProductsInner = styled(motion.div)`
-  width: 88%;
-  height: 100%;
+  /* width: 88%;
+  height: 100%; */
   display: flex;
   flex-direction: column;
+  padding: 2rem 4rem;
+  h2,
+  h3 {
+    font-weight: 400 !important;
+    font-size: 1.5rem;
+    padding: 0;
+  }
+  @media (max-width: 1120px) {
+    padding: 0rem;
+  }
 `;
 
 export const MoreProductTitle = styled(motion.div)`
   h3 {
-    font-weight: normal;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    color: var(--primary);
-    letter-spacing: 0.2rem;
-
-    background-color: white;
-    padding: 2rem;
-    border-radius: 1rem;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-
-    svg {
-      color: var(--special);
-      margin-right: 0.5rem;
-    }
+    font-family: "Signika", sans-serif;
+    font-size: 2rem;
+    letter-spacing: 2%;
+    font-weight: 700 !important;
+    color: #2d2d2d;
+    padding: 0 0 1rem 0;
   }
 `;
 
@@ -227,34 +261,4 @@ export const GalleryArtist = styled(motion.div)`
 
 export const ToastStyled = styled.span`
   font-size: 1.4rem;
-`;
-
-export const TracklistStyled = styled(motion.div)`
-  font-size: 1.5rem;
-  ul {
-    display: flex;
-    flex-direction: column;
-    border-bottom: 1px solid #cecece;
-    list-style: none;
-  }
-  li {
-    border-top: 1px solid #cecece;
-    padding: 1rem 0rem;
-    display: flex;
-    justify-content: space-between;
-    div {
-      display: flex;
-      gap: 1rem;
-    }
-    svg {
-      font-size: 2rem;
-      cursor: pointer;
-      &:hover {
-        color: var(--special);
-      }
-    }
-  }
-  span:nth-child(1) {
-    font-weight: bold;
-  }
 `;

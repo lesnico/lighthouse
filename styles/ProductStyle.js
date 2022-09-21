@@ -16,11 +16,13 @@ export const ProductStyles = styled(motion.div)`
     height: 100%;
   }
   h2 {
+    font-family: "Signika", sans-serif;
     padding: 0.5rem 0rem;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
     font-size: 1.5rem;
+    font-weight: 700;
   }
   h3 {
     font-size: 1.4rem;

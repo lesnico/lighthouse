@@ -10,10 +10,11 @@ export const SortStyled = styled(motion.div)`
   justify-content: center;
   align-items: center;
 
-  /* margin: 0 0 2rem 0; */
-  margin: 1rem 0rem;
+  margin: 0 0 2rem 0;
+
   z-index: 100;
   position: relative;
+  background: var(--special);
   @media (max-width: 700px) {
     height: 6vh;
   }
@@ -24,8 +25,6 @@ export const SortStyledInner = styled(motion.div)`
   height: 100%;
   display: flex;
   padding: 0rem 2rem;
-  background: var(--special);
-  border-radius: 1rem;
 `;
 
 export const SearchInput = styled(motion.div)`

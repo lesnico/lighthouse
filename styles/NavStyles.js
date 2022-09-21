@@ -9,7 +9,7 @@ export const NavStyles = styled(motion.nav)`
   align-items: center;
   flex-direction: column;
   font-size: 1rem;
-  z-index: 200;
+  z-index: 500;
   position: relative;
   a {
     font-size: 1.2rem;
@@ -96,6 +96,7 @@ export const NavBottom = styled.div`
 `;
 
 export const Logo = styled(motion.div)`
+  font-family: "Signika", sans-serif;
   z-index: 100;
   display: flex;
   justify-content: flex-start;

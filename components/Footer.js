@@ -22,15 +22,11 @@ export default function Footer() {
         <p>69003 - Lyon, France</p>
         <FooterSocial>
           <div>
-            <Link href={"/"}>
-              <BsFacebook />
-            </Link>
-            <Link href={"/"}>
-              <BsInstagram />
-            </Link>
-            <Link href={"/"}>
-              <BsYoutube />
-            </Link>
+            <BsFacebook />
+
+            <BsInstagram />
+
+            <BsYoutube />
           </div>
           <div>
             <span onClick={() => window.scrollTo(0, 0)}>

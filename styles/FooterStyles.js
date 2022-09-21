@@ -9,6 +9,12 @@ export const FooterStyle = styled(motion.div)`
   justify-content: center;
   align-items: center;
   border-top: 1px solid var(--special);
+  a {
+    transition: color, 0.2s ease;
+    &:hover {
+      color: var(--special);
+    }
+  }
 `;
 export const FooterStyleInner = styled(motion.div)`
   width: 88%;
@@ -23,8 +29,10 @@ export const FooterStyleInner = styled(motion.div)`
     font-size: 3.5rem;
     color: #464646;
     letter-spacing: -3px;
+    font-family: "Signika", sans-serif;
   }
   h3 {
+    font-family: "Signika", sans-serif;
     font-size: 1.8rem;
     font-weight: normal;
     letter-spacing: -1px;
@@ -48,12 +56,20 @@ export const FooterSocial = styled(motion.div)`
   color: #464646;
   svg {
     cursor: pointer;
+    transition: color, 0.2s ease;
+    &:hover {
+      color: var(--special);
+    }
   }
   div {
     display: flex;
     gap: 1rem;
     span {
       cursor: pointer;
+      transition: color, 0.2s ease;
+      &:hover {
+        color: var(--special);
+      }
     }
   }
   @media (max-width: 750px) {
