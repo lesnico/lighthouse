@@ -23,7 +23,8 @@
     "react-youtube": "^10.0.0",
     "stripe": "^10.10.0",
     "styled-components": "^5.3.5",
-    "urql": "^2.2.3"
+    "urql": "^2.2.3",
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
     "@svgr/webpack": "^6.3.1",
