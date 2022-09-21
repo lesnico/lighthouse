@@ -101,6 +101,7 @@ export default function ProductDetails() {
                 {label} | {convertDate(release)} | {format}
               </p>
               <Quantity>
+                {/* lol */}
                 <span>Quantité : </span>
                 <motion.button
                   whileHover={{
