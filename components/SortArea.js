@@ -30,46 +30,24 @@ export default function SortArea() {
           transition={{ duration: 0.75 }}
         >
           <SortStyledInner>
+            <div>
+              <p>La Boutique</p>
+              <p>Une sélection préparée avec amour en exclusivité web ! </p>
+            </div>
+
             <SearchInput>
-              <div>
-                <select
-                  name="filter-artist-name"
-                  id="filter-artist-name"
-                  onChange={handleSearch}
-                >
-                  <option value={""}>Tous les artistes</option>
-                  {listArtists.map((artist) => (
-                    <option
-                      value={artist.attributes.artist_name}
-                      key={artist.attributes.artist_name}
-                    >
-                      {artist.attributes.artist_name}
-                    </option>
-                  ))}
-                </select>
-              </div>
-              <div>
-                {search === "" && (
-                  <select
-                    name="filter-sort"
-                    id="filter-sort"
-                    onChange={handleSort}
-                  >
-                    <option value="createdAt:desc">Derniers ajouts</option>
-                    {/* <option value="createdAt:desc">Les moins récents</option> */}
-                    <option value="artist.artist_name:asc">
-                      Artistes &uarr;
-                    </option>
-                    <option value="artist.artist_name:desc">
-                      Artistes &#8595;
-                    </option>
-                    <option value="title:asc">Albums &uarr;</option>
-                    <option value="title:desc">Albums &#8595;</option>
-                    <option value="price:asc">Prix &uarr;</option>
-                    <option value="price:desc">Prix &#8595;</option>
-                  </select>
-                )}
-              </div>
+              <select name="filter-sort" id="filter-sort" onChange={handleSort}>
+                <option value="createdAt:desc">Derniers ajouts</option>
+                {/* <option value="createdAt:desc">Les moins récents</option> */}
+                <option value="artist.artist_name:asc">Artistes &uarr;</option>
+                <option value="artist.artist_name:desc">
+                  Artistes &#8595;
+                </option>
+                <option value="title:asc">Albums &uarr;</option>
+                <option value="title:desc">Albums &#8595;</option>
+                <option value="price:asc">Prix &uarr;</option>
+                <option value="price:desc">Prix &#8595;</option>
+              </select>
             </SearchInput>
           </SortStyledInner>
         </SortStyled>

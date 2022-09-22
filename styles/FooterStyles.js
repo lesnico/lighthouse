@@ -25,18 +25,23 @@ export const FooterStyleInner = styled(motion.div)`
   @media (max-width: 750px) {
     padding: 2rem 0rem 4rem 0rem;
   }
-  h1 {
-    font-size: 3.5rem;
-    color: #464646;
-    letter-spacing: -3px;
-    font-family: "Signika", sans-serif;
-  }
-  h3 {
-    font-family: "Signika", sans-serif;
-    font-size: 1.8rem;
-    font-weight: normal;
-    letter-spacing: -1px;
-    margin-bottom: 1rem;
+  .logo {
+    p:first-child {
+      font-size: 3.5rem;
+      color: #464646;
+      letter-spacing: -3px;
+      font-family: "Signika", sans-serif;
+      font-weight: 700;
+    }
+    p:nth-child(2) {
+      font-family: "Signika", sans-serif;
+      font-size: 1.8rem;
+      font-weight: normal;
+      letter-spacing: -1px;
+      margin-bottom: 1rem;
+      font-weight: 700;
+      color: #2d2d2d;
+    }
   }
   p {
     font-size: 1.5rem;

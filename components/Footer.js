@@ -16,8 +16,10 @@ export default function Footer() {
   return (
     <FooterStyle initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
       <FooterStyleInner>
-        <h1>LIGHTHOUSE</h1>
-        <h3>RECORD SHOP</h3>
+        <div className="logo">
+          <p>LIGHTHOUSE</p>
+          <p>RECORD SHOP</p>
+        </div>
         <p>105 Rue Pierre Corneille</p>
         <p>69003 - Lyon, France</p>
         <FooterSocial>

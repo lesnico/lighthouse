@@ -3,60 +3,56 @@ import { motion } from "framer-motion";
 
 export const SortStyled = styled(motion.div)`
   width: 100%;
-  height: 5vh;
-
-  gap: 2rem;
+  min-height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
-
-  margin: 0 0 2rem 0;
-
-  z-index: 100;
-  position: relative;
-  background: var(--special);
-  @media (max-width: 700px) {
-    height: 6vh;
-  }
+  margin: 2rem 0rem;
 `;
 
 export const SortStyledInner = styled(motion.div)`
   width: 88%;
-  height: 100%;
+  min-height: 10vh;
+  background: white;
+  border-radius: 0.8rem;
   display: flex;
-  padding: 0rem 2rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 2rem;
+  div {
+    p {
+      letter-spacing: -7%;
+      color: #808080;
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+    p:first-child {
+      font-size: 2.6rem;
+      color: #2d2d2d;
+      font-family: "Signika", sans-serif;
+      text-transform: uppercase;
+    }
+  }
+  @media (max-width: 660px) {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
 `;
 
 export const SearchInput = styled(motion.div)`
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 2rem;
+  margin: -3px;
   select {
     border: none;
     border-radius: 1rem;
-    padding: 0.3rem 0.5rem;
+    padding: 0.3rem 0rem;
     background: #ffffff;
     color: #535353;
   }
-  button {
-    border: none;
-    background: #535353;
-    color: #f1f1f1;
-    border-bottom-right-radius: 1rem;
-    border-top-right-radius: 1rem;
-    padding: 0.3rem 0.5rem;
-    cursor: pointer;
-    position: absolute;
-    left: 85%;
-    top: -2px;
-    font-size: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 1085px) {
-    justify-content: space-between;
+  @media (max-width: 660px) {
+    margin: 1rem 0rem;
   }
 `;
