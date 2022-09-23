@@ -10,7 +10,7 @@ body {
   --secondary: #535353;
   --special: #e29097;
   --action: #e29097;
-  /* scrollbar-gutter: stable; */
+  scrollbar-gutter: stable;
 }
 
 html {
@@ -27,7 +27,8 @@ html {
   position: fixed;
   inset: 0;
   cursor: pointer;
-  backdrop-filter: blur(7px);
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 300;
 }
 
 .video-modal-body {
