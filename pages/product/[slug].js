@@ -42,7 +42,12 @@ export default function ProductDetails() {
 
   const { data, fetching, error } = results;
   //Check for the data coming in
-  if (fetching) return;
+  if (fetching)
+    return (
+      <motion.div className="loading">
+        <img src="/loading.svg" alt="" />
+      </motion.div>
+    );
   if (error) return;
   //exctract data
   const {
