@@ -250,7 +250,6 @@ export const TracklistStyled = styled(motion.div)`
     position: fixed;
     top: 1%;
     right: 1%;
-    z-index: 100;
     display: flex;
     justify-content: center;
     align-items: center;
