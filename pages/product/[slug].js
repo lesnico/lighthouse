@@ -119,6 +119,7 @@ export default function ProductDetails() {
               <Quantity>
                 <span>Quantité : </span>
                 <motion.button
+                  onClick={navigator.vibrate(200)}
                   whileHover={{
                     scale: 0.9,
                     transition: { duration: 0.3 },
