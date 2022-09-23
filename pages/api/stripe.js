@@ -15,6 +15,7 @@ export default async function handler(req, res) {
         allow_promotion_codes: true,
 
         shipping_options: [
+          {shipping_rate: "shr_1LlBsQCVQrxK13iywmlaBEts"}
           { shipping_rate: "shr_1LiavyCVQrxK13iyf2eWiRCz" },
           { shipping_rate: "shr_1Lib7GCVQrxK13iyMAyEFcFQ" },
         ],
