@@ -14,6 +14,9 @@ export const DetailsStyleInner = styled(motion.div)`
   height: 100%;
   display: flex;
   flex-direction: column;
+  @media (max-width: 780px) {
+    width: 100%;
+  }
   h1 {
     font-family: "Signika", sans-serif;
     font-size: 2.6rem;
@@ -76,8 +79,8 @@ export const AlbumInfoCont = styled(motion.div)`
   @media (max-width: 1120px) {
     flex-direction: column;
   }
-  @media (max-width: 750px) {
-    padding: 2rem;
+  @media (max-width: 780px) {
+    padding: 0rem;
     background-color: transparent;
   }
   @media (max-width: 500px) {
@@ -103,8 +106,8 @@ export const Cover = styled(motion.div)`
       margin: 4rem 0rem;
       box-shadow: none;
     }
-    @media (max-width: 750px) {
-      padding: 2rem 2rem;
+    @media (max-width: 780px) {
+      /* padding: 2rem 2rem; */
     }
   }
 `;
@@ -208,6 +211,9 @@ export const TracklistStyled = styled(motion.div)`
   span:nth-child(1) {
     font-weight: bold;
   }
+  @media (max-width: 780px) {
+    padding: 0rem 2rem 2rem 2rem;
+  }
 `;
 
 export const MoreProductsStyled = styled(motion.div)`
@@ -232,6 +238,9 @@ export const MoreProductsInner = styled(motion.div)`
   }
   @media (max-width: 1120px) {
     padding: 0rem;
+  }
+  @media (max-width: 780px) {
+    padding: 0rem 2rem;
   }
 `;
 
