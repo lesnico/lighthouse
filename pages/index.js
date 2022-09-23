@@ -6,6 +6,7 @@ import { Gallery, GalleryCont } from "../styles/Gallery";
 import { useStateContext } from "../lib/context";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
+import Loading from "../public/loading.svg";
 
 export default function Home() {
   const { search, sort, setSort, setSearch } = useStateContext();
@@ -34,7 +35,7 @@ export default function Home() {
   if (fetching)
     return (
       <div layout className="loading">
-        <p>Chargement...</p>
+        <img src={Loading} alt="" />
       </div>
     );
   if (error) return <p>Oh no... {error.message}</p>;

@@ -79,7 +79,7 @@ p {
   color: var(--primary);
 }
 
-.loading svg {
+.loading img {
   animation-name: ckw;
   animation-duration: 15.5s;
   animation-iteration-count: infinite;
