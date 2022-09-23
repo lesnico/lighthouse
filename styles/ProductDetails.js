@@ -196,6 +196,7 @@ export const TracklistStyled = styled(motion.div)`
   padding: 0rem 0rem 2rem 0rem;
   flex: 1;
   font-size: 1.5rem;
+  position: relative;
   p {
     padding: 1rem 0rem;
   }
@@ -230,6 +231,32 @@ export const TracklistStyled = styled(motion.div)`
   }
   @media (max-width: 780px) {
     padding: 0rem 2rem 2rem 2rem;
+  }
+  .video-exit-btn {
+    width: 250px;
+    padding: 2rem 1.5rem;
+    background: var(--primary);
+    width: 5rem;
+    height: 5rem;
+    z-index: 200;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    position: fixed;
+    top: 1%;
+    right: 1%;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 `;
 

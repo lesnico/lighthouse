@@ -10,7 +10,7 @@ body {
   --secondary: #535353;
   --special: #e29097;
   --action: #e29097;
-  scrollbar-gutter: stable;
+  /* scrollbar-gutter: stable; */
 }
 
 html {
@@ -25,9 +25,9 @@ html {
 
 .video-modal-overlay {
   position: fixed;
-  inset: 0px;
-  background-color: rgba(0, 0, 0, 0.4);
+  inset: 0;
   cursor: pointer;
+  backdrop-filter: blur(7px);
 }
 
 .video-modal-body {
@@ -36,6 +36,11 @@ html {
   overflow: auto;
   border-radius: 8px;
   outline: none;
+  padding: 2rem;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+  cursor: default;
 }
 
 h2 {
