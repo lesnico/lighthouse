@@ -26,20 +26,24 @@ export const SuccessHeader = styled(motion.div)`
   flex-direction: column;
   align-items: flex-start;
   h3 {
-    font-size: 2rem;
+    font-size: 2.6rem;
     font-weight: bold;
     color: var(--primary);
     padding: 0 0 2rem 0;
+    font-family: "Signika", sans-serif;
   }
   p {
     font-size: 1.5rem;
     font-weight: normal;
     color: #808080;
     padding: 0 0 2rem 0;
+
     span {
       display: flex;
       font-weight: bold;
       margin-top: 1rem;
+      font-family: "Signika", sans-serif;
+      color: var(--special);
     }
   }
 `;
@@ -53,8 +57,15 @@ export const SuccessInfos = styled(motion.div)`
   p {
     font-size: 1.5rem;
     font-weight: 400;
-    color: var(--secondary);
+    color: #808080;
     line-height: 2rem;
+  }
+  .success-title {
+    font-family: "Signika", sans-serif;
+    font-size: 2rem;
+    color: var(--primary);
+    font-weight: 700;
+    padding: 0rem 0rem 1rem 0rem;
   }
 `;
 
@@ -73,25 +84,20 @@ export const SuccessProducts = styled(motion.div)`
 export const KeepShopping = styled(motion.div)`
   width: 30%;
   background: var(--action);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 1rem 0rem 0rem 0rem;
-  padding: 1rem 1.5rem;
-  cursor: pointer;
-  border: none;
   color: white;
-  span {
-    color: white;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    font-weight: normal;
-    gap: 0.5rem;
-    &:hover {
-      color: var(--primary);
-    }
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0rem 2rem 0rem;
+  text-transform: uppercase;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  border-radius: 0.8rem;
+  @media (max-width: 1760px) {
+    width: 70%;
   }
-  @media (max-width: 750px) {
+  @media (max-width: 780px) {
     width: 100%;
   }
 `;

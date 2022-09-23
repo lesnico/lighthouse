@@ -29,6 +29,7 @@ export async function getServerSideProps(params) {
 export default function Success({ order }) {
   console.log(order);
   const route = useRouter();
+
   return (
     <>
       <Head>
@@ -53,20 +54,47 @@ export default function Success({ order }) {
           </SuccessHeader>
           <SuccessInfos>
             <SuccessAdress>
-              <p>
-                <b>Adresse : </b>
-              </p>
-              <p>{order.customer_details.name}</p>
-              {Object.entries(order.customer_details.address).map(
-                ([key, val]) => (
-                  <p key={key}>{val}</p>
-                )
+              {order.shipping_cost.shipping_rate !=
+                "shr_1LlBsQCVQrxK13iywmlaBEts" && (
+                <>
+                  <p className="success-title">Adresse :</p>
+                  <p>{order.customer_details.name}</p>
+                  <p>{order.customer_details.address.line1}</p>
+                  <p>
+                    {order.customer_details.address.postal_code},{" "}
+                    {order.customer_details.address.city}{" "}
+                    {order.customer_details.address.country}
+                  </p>
+                </>
+              )}
+              {order.shipping_cost.shipping_rate ===
+                "shr_1LlBsQCVQrxK13iywmlaBEts" && (
+                <>
+                  <p>
+                    Vous avez décidé de venir récupérer votre commande en
+                    magasin.
+                    <br />
+                    C'est un super idée ! On vous attends avec impatience au
+                    <br />
+                    <span
+                      style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        padding: "2rem 0rem",
+                        color: "#E29097",
+                      }}
+                    >
+                      <b>105 Rue pierre Corneille</b>
+                      <b>69003, Lyon</b>
+                    </span>
+                    N'oubliez pas de venir avec votre reçu envoyé par mail et on
+                    s'occupe du reste 😘 !
+                  </p>
+                </>
               )}
             </SuccessAdress>
             <SuccessProducts>
-              <p>
-                <b>Commande : </b>
-              </p>
+              <p className="success-title">Commande :</p>
               {order.line_items.data.map((item) => (
                 <div key={item.id}>
                   <p>
@@ -87,9 +115,6 @@ export default function Success({ order }) {
               whileTap={{ scale: 1.1, transition: { duration: 0.1 } }}
             >
               <span>Continuer vos achats !</span>
-              <span>
-                <FaShoppingCart />
-              </span>
             </KeepShopping>
           </Link>
         </SuccessStyleInner>
