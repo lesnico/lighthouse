@@ -30,7 +30,8 @@ export default function Home() {
   const { data, fetching, error } = results;
 
   //Check for the data coming in
-  if (fetching) return;
+
+  if (fetching) return <p>Loading...</p>;
   if (error) return <p>Oh no... {error.message}</p>;
 
   const products = data.products.data;
