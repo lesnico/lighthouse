@@ -95,7 +95,11 @@ export default function ProductDetails() {
               <Carousel>
                 {image.data.map((imageItem) => (
                   <img
-                    src={imageItem.attributes.formats.medium.url}
+                    src={
+                      imageItem.attributes.formats.medium.url
+                        ? imageItem.attributes.formats.medium.url
+                        : imageItem.attributes.formats.small.url
+                    }
                     alt={title}
                     key={imageItem.attributes.formats.medium.url}
                   />
