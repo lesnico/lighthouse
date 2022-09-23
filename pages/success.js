@@ -56,7 +56,7 @@ export default function Success({ order }) {
             <SuccessAdress>
               {order.shipping_cost.shipping_rate !=
                 "shr_1LlBsQCVQrxK13iywmlaBEts" && (
-                <>
+                <p>
                   <p className="success-title">Adresse :</p>
                   <p>{order.customer_details.name}</p>
                   <p>{order.customer_details.address.line1}</p>
@@ -65,7 +65,7 @@ export default function Success({ order }) {
                     {order.customer_details.address.city}{" "}
                     {order.customer_details.address.country}
                   </p>
-                </>
+                </p>
               )}
               {order.shipping_cost.shipping_rate ===
                 "shr_1LlBsQCVQrxK13iywmlaBEts" && (
