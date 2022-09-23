@@ -104,6 +104,11 @@ export const Cover = styled(motion.div)`
       box-shadow: none; */
     }
   }
+  .carousel-root {
+    @media (max-width: 780px) {
+      padding: 2rem;
+    }
+  }
   .carousel {
     margin: 2rem 2rem;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
@@ -112,6 +117,9 @@ export const Cover = styled(motion.div)`
     border-radius: 0.8rem;
     @media (max-width: 780px) {
       margin: 2rem 0rem;
+      width: 100% !important ;
+      box-shadow: none;
+
       img {
         width: 100% !important ;
         height: 100% !important;
