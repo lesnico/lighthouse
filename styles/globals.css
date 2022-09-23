@@ -23,6 +23,23 @@ html {
   overflow: hidden;
 }
 
+.video-modal-overlay {
+  position: fixed;
+  inset: 0px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.video-modal-body {
+  position: absolute;
+  inset: 40px;
+  border: 1px solid rgb(204, 204, 204);
+  background: rgb(255, 255, 255);
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+}
+
 h2 {
   font-size: 1.2rem;
   color: var(--primary);
