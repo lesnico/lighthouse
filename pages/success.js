@@ -71,9 +71,7 @@ export default function Success({ order }) {
                 "shr_1LlBsQCVQrxK13iywmlaBEts" && (
                 <p>
                   Vous avez décidé de venir récupérer votre commande en magasin.
-                  <br />
                   C'est un super idée ! On vous attends avec impatience au
-                  <br />
                   <span
                     style={{
                       display: "flex",
