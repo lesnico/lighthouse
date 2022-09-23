@@ -265,7 +265,8 @@ export const VideoIframe = styled(motion.div)`
   width: 100%;
   height: 100%;
   position: relative;
-
+  flex: 1;
+  display: flex;
   iframe {
     left: 0;
     top: 0;
