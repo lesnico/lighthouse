@@ -35,7 +35,7 @@ export default function Home() {
   if (fetching)
     return (
       <div layout className="loading">
-        <img src={Loading} alt="" />
+        <img src="/logo.svg" alt="" />
       </div>
     );
   if (error) return <p>Oh no... {error.message}</p>;
