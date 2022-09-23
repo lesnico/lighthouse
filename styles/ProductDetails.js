@@ -96,19 +96,20 @@ export const Cover = styled(motion.div)`
   img {
     width: 35rem;
     height: 35rem;
-    border-radius: 0.8rem;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
     @media (max-width: 1120px) {
       /* width: 60%;
       height: 60%; */
-      margin: 4rem 0rem;
-      box-shadow: none;
+      /* margin: 4rem 0rem;
+      box-shadow: none; */
     }
-    @media (max-width: 780px) {
-      /* padding: 2rem 2rem; */
-    }
+  }
+  .carousel {
+    margin: 2rem 2rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 0.8rem;
   }
 `;
 
@@ -170,8 +171,8 @@ export const Buy = styled(motion.div)`
   @media (max-width: 1760px) {
     width: 70%;
   }
-  @media (max-width: 570px) {
-    width: 70%;
+  @media (max-width: 780px) {
+    width: 100%;
   }
 `;
 
