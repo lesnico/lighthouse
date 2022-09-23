@@ -26,8 +26,7 @@ html {
 .video-modal-overlay {
   position: fixed;
   inset: 0;
-  cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: var(--primary);
   z-index: 300;
 }
 
@@ -40,7 +39,6 @@ html {
   padding: 2rem;
   background: white;
   border-radius: 1rem;
-  box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
   cursor: default;
 }
 

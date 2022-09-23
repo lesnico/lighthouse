@@ -233,12 +233,14 @@ export const TracklistStyled = styled(motion.div)`
     padding: 0rem 2rem 2rem 2rem;
   }
   .video-exit-btn {
+    border: 3px solid white;
+
     width: 250px;
     padding: 2rem 1.5rem;
     background: var(--primary);
     width: 5rem;
     height: 5rem;
-    z-index: 200;
+    z-index: 500;
     border-radius: 100%;
     justify-content: center;
     align-items: center;
