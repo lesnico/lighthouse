@@ -11,6 +11,7 @@ import {
 import Head from "next/head";
 import { FaShoppingCart } from "react-icons/fa";
 import Link from "next/link";
+import Footer from "../components/Footer";
 
 const stripe = require("stripe")(
   `${process.env.NEXT_PUBLIC_STRIPE_SECRET_KEY}`
@@ -114,6 +115,7 @@ export default function Success({ order }) {
           </Link>
         </SuccessStyleInner>
       </SuccessStyle>
+      <Footer />
     </>
   );
 }

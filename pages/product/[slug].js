@@ -21,6 +21,7 @@ import Tracklist from "../../components/Tracklist";
 import MoreProducts from "../../components/MoreProducts";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.css";
+import Footer from "../components/Footer";
 
 export default function ProductDetails() {
   //Use state
@@ -177,6 +178,7 @@ export default function ProductDetails() {
           )}
         </DetailsStyleInner>
       </DetailsStyle>
+      <Footer />
     </>
   );
 }
