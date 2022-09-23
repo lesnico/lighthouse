@@ -33,7 +33,7 @@ export default function Home() {
 
   if (fetching)
     return (
-      <div className="loading">
+      <div layout className="loading">
         <p>Chargement...</p>
       </div>
     );
@@ -53,7 +53,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <GalleryCont>
+        <GalleryCont layout>
           <Gallery initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
             {products.map((product) => (
               <motion.div key={product.attributes.slug}>
