@@ -13,9 +13,8 @@ export default function Tracklist({ tracklist }) {
 
   const videoHandling = (videoItem) => {
     setShowVideo(true);
-    const currentVideoItem =
-      videoItem.replace("watch?v=", "embed/") + "&autoplay=1";
-    setCurrentVideo(currentVideoItem);
+    const currentVideoItem = videoItem.replace("watch?v=", "embed/");
+    setCurrentVideo(currentVideoItem + "?&autoplay=1");
   };
 
   const container = {
