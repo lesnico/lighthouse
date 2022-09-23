@@ -92,7 +92,7 @@ export default function ProductDetails() {
         <DetailsStyleInner>
           <AlbumInfoCont>
             <Cover>
-              <Carousel width="35rem" showThumbs={false}>
+              <Carousel width="35rem" showThumbs={false} swipeable={false}>
                 {image.data.map((imageItem) => (
                   <img
                     src={
