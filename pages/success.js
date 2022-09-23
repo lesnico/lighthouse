@@ -71,7 +71,7 @@ export default function Success({ order }) {
                 "shr_1LlBsQCVQrxK13iywmlaBEts" && (
                 <p>
                   Vous avez décidé de venir récupérer votre commande en magasin.
-                  C'est un super idée ! On vous attends avec impatience au
+                  C&apos;est un super idée ! On vous attends avec impatience au
                   <span
                     style={{
                       display: "flex",
@@ -83,8 +83,8 @@ export default function Success({ order }) {
                     <b>105 Rue pierre Corneille</b>
                     <b>69003, Lyon</b>
                   </span>
-                  N'oubliez pas de venir avec votre reçu envoyé par mail et on
-                  s'occupe du reste 😘 !
+                  N&apos;oubliez pas de venir avec votre reçu envoyé par mail et
+                  on s&apos;occupe du reste 😘 !
                 </p>
               )}
             </SuccessAdress>
