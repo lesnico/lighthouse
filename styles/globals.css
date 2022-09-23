@@ -22,12 +22,15 @@ html {
 .ReactModal__Html--open {
   overflow: hidden;
 }
-.ReactModal__Content .ReactModal__Content--after-open {
+.video-overlay {
   border: none !important;
   background-color: rgba(0, 0, 0, 0.4) !important;
   z-index: 300 !important;
   border-radius: 8px !important;
   padding: 0px !important;
+}
+
+.video-modal {
 }
 
 h2 {
