@@ -108,6 +108,7 @@ export const Cover = styled(motion.div)`
     @media (max-width: 780px) {
       padding: 2rem;
     }
+    border-radius: 0.8rem;
   }
   .carousel {
     margin: 2rem 2rem;
