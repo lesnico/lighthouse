@@ -69,28 +69,25 @@ export default function Success({ order }) {
               )}
               {order.shipping_cost.shipping_rate ===
                 "shr_1LlBsQCVQrxK13iywmlaBEts" && (
-                <>
-                  <p>
-                    Vous avez décidé de venir récupérer votre commande en
-                    magasin.
-                    <br />
-                    C'est un super idée ! On vous attends avec impatience au
-                    <br />
-                    <span
-                      style={{
-                        display: "flex",
-                        flexDirection: "column",
-                        padding: "2rem 0rem",
-                        color: "#E29097",
-                      }}
-                    >
-                      <b>105 Rue pierre Corneille</b>
-                      <b>69003, Lyon</b>
-                    </span>
-                    N'oubliez pas de venir avec votre reçu envoyé par mail et on
-                    s'occupe du reste 😘 !
-                  </p>
-                </>
+                <p>
+                  Vous avez décidé de venir récupérer votre commande en magasin.
+                  <br />
+                  C'est un super idée ! On vous attends avec impatience au
+                  <br />
+                  <span
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      padding: "2rem 0rem",
+                      color: "#E29097",
+                    }}
+                  >
+                    <b>105 Rue pierre Corneille</b>
+                    <b>69003, Lyon</b>
+                  </span>
+                  N'oubliez pas de venir avec votre reçu envoyé par mail et on
+                  s'occupe du reste 😘 !
+                </p>
               )}
             </SuccessAdress>
             <SuccessProducts>
