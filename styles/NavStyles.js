@@ -9,7 +9,7 @@ export const NavStyles = styled(motion.nav)`
   align-items: center;
   flex-direction: column;
   font-size: 1rem;
-  z-index: 500;
+  z-index: 200;
   position: relative;
   a {
     font-size: 1.2rem;
