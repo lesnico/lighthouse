@@ -233,6 +233,20 @@ export const TracklistStyled = styled(motion.div)`
   }
 `;
 
+export const VideoIframe = styled(motion.div)`
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+`;
+
 export const MoreProductsStyled = styled(motion.div)`
   /* width: 100%;
   min-height: 10vh;

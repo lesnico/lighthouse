@@ -1,8 +1,21 @@
 import Link from "next/link";
-import { TracklistStyled } from "../styles/ProductDetails";
+import { TracklistStyled, VideoIframe } from "../styles/ProductDetails";
 import { FaYoutube } from "react-icons/fa";
 import { v4 as uuidv4 } from "uuid";
+import Modal from "react-modal";
+
+import { useStateContext } from "../lib/context";
+
 export default function Tracklist({ tracklist }) {
+  const { showVideo, setShowVideo, ytVideoGen, currentVideo, setCurrentVideo } =
+    useStateContext();
+
+  const videoHandling = (videoItem) => {
+    console.log(videoItem);
+    setShowVideo(true);
+    const currentVideoItem = videoItem.replace("watch?v=", "embed/");
+    setCurrentVideo(currentVideoItem);
+  };
   return (
     <>
       <TracklistStyled>
@@ -22,11 +35,30 @@ export default function Tracklist({ tracklist }) {
                     <span key={uuidv4()}>{trackItem2.track}</span>
                   </div>
                   {trackItem2.video && (
-                    <Link key={uuidv4()} href={trackItem2.video}>
-                      <span key={uuidv4()}>
-                        <FaYoutube />
-                      </span>
-                    </Link>
+                    <span key={uuidv4()}>
+                      <FaYoutube
+                        onClick={() => videoHandling(trackItem2.video)}
+                      />
+                      <Modal
+                        isOpen={showVideo}
+                        // onAfterOpen={afterOpenModal}
+                        onRequestClose={() => setShowVideo(false)}
+                        // style={customStyles}
+                        contentLabel="Example Modal"
+                      >
+                        <VideoIframe>
+                          <iframe
+                            width="560"
+                            height="315"
+                            src={currentVideo}
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                          ></iframe>
+                        </VideoIframe>
+                      </Modal>
+                    </span>
                   )}
                 </li>
               ))}
