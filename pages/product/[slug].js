@@ -19,6 +19,8 @@ import toast from "react-hot-toast";
 import { useEffect } from "react";
 import Tracklist from "../../components/Tracklist";
 import MoreProducts from "../../components/MoreProducts";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 export default function ProductDetails() {
   //Use state
@@ -37,6 +39,7 @@ export default function ProductDetails() {
     query: GET_PRODUCT_QUERY,
     variables: { slug: query.slug },
   });
+
   const { data, fetching, error } = results;
   //Check for the data coming in
   if (fetching) return;
@@ -89,10 +92,15 @@ export default function ProductDetails() {
         <DetailsStyleInner>
           <AlbumInfoCont>
             <Cover>
-              <img
-                src={image.data[0].attributes.formats.medium.url}
-                alt={title}
-              />
+              <Carousel>
+                {image.data.map((imageItem) => (
+                  <img
+                    src={imageItem.attributes.formats.medium.url}
+                    alt={title}
+                    key={imageItem.attributes.formats.medium.url}
+                  />
+                ))}
+              </Carousel>
             </Cover>
             <AlbumInfo>
               <h1>{title}</h1>
@@ -101,7 +109,6 @@ export default function ProductDetails() {
                 {label} | {convertDate(release)} | {format}
               </p>
               <Quantity>
-                {/* lol */}
                 <span>Quantité : </span>
                 <motion.button
                   whileHover={{
