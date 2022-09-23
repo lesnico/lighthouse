@@ -40,7 +40,6 @@ export default function MoreProducts({ artist, title }) {
               return (
                 <Link
                   key={otherWork.attributes.slug}
-                  scroll={false}
                   href={`/product/${otherWork.attributes.slug}`}
                 >
                   <ProductStyles

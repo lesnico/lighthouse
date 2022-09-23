@@ -26,7 +26,7 @@ export default function Product({ product }) {
   };
 
   return (
-    <Link scroll={false} href={`/product/${slug}`}>
+    <Link href={`/product/${slug}`}>
       <ProductStyles whileHover="visible" variants={container}>
         <motion.div
           initial={{ opacity: 0 }}
