@@ -96,7 +96,7 @@ export default function ProductDetails() {
                 {image.data.map((imageItem) => (
                   <img
                     src={
-                      imageItem.attributes.formats.medium.url
+                      imageItem.attributes.formats.medium
                         ? imageItem.attributes.formats.medium.url
                         : imageItem.attributes.formats.small.url
                     }
