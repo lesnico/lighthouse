@@ -33,9 +33,8 @@ function MyApp({ Component, pageProps, router }) {
           }}
         >
           <Component {...pageProps} />
-
-          <Footer />
         </motion.div>
+        <Footer />
       </Provider>
     </StateContext>
   );

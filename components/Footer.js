@@ -14,10 +14,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <FooterStyle
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1, animation: { delay: 3 } }}
-    >
+    <FooterStyle initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
       <FooterStyleInner>
         <div className="logo">
           <p>LIGHTHOUSE</p>
