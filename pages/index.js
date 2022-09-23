@@ -31,7 +31,12 @@ export default function Home() {
 
   //Check for the data coming in
 
-  if (fetching) return <p>Loading...</p>;
+  if (fetching)
+    return (
+      <div className="loading">
+        <p>Chargement...</p>
+      </div>
+    );
   if (error) return <p>Oh no... {error.message}</p>;
 
   const products = data.products.data;
