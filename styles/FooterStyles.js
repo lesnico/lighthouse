@@ -9,6 +9,7 @@ export const FooterStyle = styled(motion.div)`
   justify-content: center;
   align-items: center;
   border-top: 1px solid var(--special);
+  opacity: 0;
   a {
     transition: color, 0.2s ease;
     &:hover {
