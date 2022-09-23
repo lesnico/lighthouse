@@ -16,7 +16,7 @@ export default function Footer() {
   return (
     <FooterStyle
       initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1, animation: { delay: 1 } }}
+      whileInView={{ opacity: 1, animation: { delay: 3 } }}
     >
       <FooterStyleInner>
         <div className="logo">
