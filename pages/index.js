@@ -34,9 +34,9 @@ export default function Home() {
 
   if (fetching)
     return (
-      <div layout className="loading">
+      <motion.div layout className="loading">
         <img src="/loading.svg" alt="" />
-      </div>
+      </motion.div>
     );
   if (error) return <p>Oh no... {error.message}</p>;
 
