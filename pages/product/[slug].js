@@ -20,7 +20,7 @@ import { useEffect } from "react";
 import Tracklist from "../../components/Tracklist";
 import MoreProducts from "../../components/MoreProducts";
 import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import "react-responsive-carousel/lib/styles/carousel.css";
 
 export default function ProductDetails() {
   //Use state
@@ -92,7 +92,7 @@ export default function ProductDetails() {
         <DetailsStyleInner>
           <AlbumInfoCont>
             <Cover>
-              <Carousel>
+              <Carousel width="35rem" showThumbs={false}>
                 {image.data.map((imageItem) => (
                   <img
                     src={
@@ -101,7 +101,11 @@ export default function ProductDetails() {
                         : imageItem.attributes.formats.small.url
                     }
                     alt={title}
-                    key={imageItem.attributes.formats.medium.url}
+                    key={
+                      imageItem.attributes.formats.medium
+                        ? imageItem.attributes.formats.medium.url
+                        : imageItem.attributes.formats.small.url
+                    }
                   />
                 ))}
               </Carousel>

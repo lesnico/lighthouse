@@ -72,6 +72,7 @@ export const AlbumInfoCont = styled(motion.div)`
   display: flex;
   align-items: center;
   padding: 4rem;
+  margin-bottom: 2rem;
   @media (max-width: 1120px) {
     flex-direction: column;
   }
@@ -96,14 +97,15 @@ export const Cover = styled(motion.div)`
       rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
       rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     @media (max-width: 1120px) {
-      width: 60%;
-      height: 60%;
+      /* width: 60%;
+      height: 60%; */
       margin: 4rem 0rem;
-    }
+      box-shadow: none;
+    } /*
     @media (max-width: 750px) {
       width: 100%;
       height: 100%;
-    }
+    } */
   }
 `;
 
@@ -111,7 +113,6 @@ export const AlbumInfo = styled(motion.div)`
   flex: 0.5;
   background-color: white;
   border-radius: 0.8rem;
-
   min-height: 10rem;
   padding: 2rem;
   @media (max-width: 1400px) {
@@ -172,7 +173,7 @@ export const Buy = styled(motion.div)`
 `;
 
 export const TracklistStyled = styled(motion.div)`
-  padding: 2rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 2rem 0rem;
   flex: 1;
   font-size: 1.5rem;
   p {
