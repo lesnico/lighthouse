@@ -74,7 +74,7 @@ p {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 15vh;
+  top: 0;
   left: 0;
   background-color: #f1f1f1;
   margin-bottom: 500vh;
