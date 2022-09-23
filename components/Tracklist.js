@@ -40,7 +40,6 @@ export default function Tracklist({ tracklist }) {
                         onClick={() => videoHandling(trackItem2.video)}
                       />
                       <Modal
-                        overlayClassName="video-overlay"
                         isOpen={showVideo}
                         // onAfterOpen={afterOpenModal}
                         onRequestClose={() => setShowVideo(false)}
