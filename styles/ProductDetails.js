@@ -155,8 +155,8 @@ export const Quantity = styled.div`
     background: transparent;
     border: none;
     display: flex;
-    font-size: 2rem;
-    padding: 0rem 0.5rem;
+    font-size: 3rem;
+    padding: 0rem 1rem;
     cursor: pointer;
   }
   p {
