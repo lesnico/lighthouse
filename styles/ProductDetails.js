@@ -78,6 +78,7 @@ export const AlbumInfoCont = styled(motion.div)`
   }
   @media (max-width: 750px) {
     padding: 2rem;
+    background-color: transparent;
   }
   @media (max-width: 500px) {
     padding: 0rem;
@@ -101,11 +102,10 @@ export const Cover = styled(motion.div)`
       height: 60%; */
       margin: 4rem 0rem;
       box-shadow: none;
-    } /*
+    }
     @media (max-width: 750px) {
-      width: 100%;
-      height: 100%;
-    } */
+      padding: 2rem 2rem;
+    }
   }
 `;
 
