@@ -5,7 +5,7 @@ export default function FourOhFour() {
     <>
       <h1>404 - Page introuvale</h1>
       <Link href="/">
-        <a>Retourner à l'accueil</a>
+        <a>Retourner à l&apos;accueil</a>
       </Link>
     </>
   );
