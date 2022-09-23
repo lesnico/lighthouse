@@ -81,7 +81,7 @@ p {
 
 .loading img {
   animation-name: ckw;
-  animation-duration: 15.5s;
+  animation-duration: 8.5s;
   animation-iteration-count: infinite;
   transform-origin: 50% 50%;
   display: inline-block;
