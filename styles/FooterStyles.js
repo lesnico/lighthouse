@@ -79,9 +79,9 @@ export const FooterSocial = styled(motion.div)`
     }
   }
   @media (max-width: 750px) {
-    flex-direction: column;
+    /* flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: flex-start; */
   }
 `;
 

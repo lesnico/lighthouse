@@ -10,6 +10,7 @@ import {
   BsYoutube,
   BsHeartFill,
 } from "react-icons/bs";
+import { FaArrowAltCircleUp } from "react-icons/fa";
 import Link from "next/link";
 
 export default function Footer() {
@@ -36,7 +37,7 @@ export default function Footer() {
           </div>
           <div>
             <span onClick={() => window.scrollTo(0, 0)}>
-              Retourner en haut.
+              <FaArrowAltCircleUp />
             </span>
           </div>
         </FooterSocial>
