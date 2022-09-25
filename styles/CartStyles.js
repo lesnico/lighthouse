@@ -87,7 +87,7 @@ export const EmptyStyle = styled(motion.div)`
 
 export const Checkout = styled(motion.div)`
   width: 100%;
-  background: var(--action);
+  background: var(--special);
   display: flex;
   justify-content: space-between;
   align-items: center;
