@@ -78,6 +78,7 @@ export default function SortArea() {
                   <li onClick={() => handleSearch("")}>Tous</li>
                   {listArtists.map((artistItem) => (
                     <li
+                      key={artistItem.attributes.artist_name}
                       onClick={() =>
                         handleSearch(artistItem.attributes.artist_name)
                       }
