@@ -9,6 +9,12 @@ import { useQuery } from "urql";
 import { GET_LIST_ARTISTS_QUERY } from "../lib/query";
 import { AnimatePresence } from "framer-motion";
 import { motion } from "framer-motion";
+import {
+  BsSortNumericDown,
+  BsSortNumericDownAlt,
+  BsSortAlphaUp,
+  BsSortAlphaUpAlt,
+} from "react-icons/bs";
 
 export default function SortArea() {
   const {
@@ -71,7 +77,7 @@ export default function SortArea() {
             <SearchInput>
               <div className="show-artists-btn">
                 <span onClick={() => setViewArtists(!viewArtists)}>
-                  {viewArtists ? "Masquer les artistes" : "Voir les artistes"}
+                  {viewArtists ? "Masquer les artistes" : "Liste des artistes"}
                 </span>
                 <p onClick={() => handleSearch("")}>{search}</p>
               </div>
@@ -82,9 +88,11 @@ export default function SortArea() {
                   onChange={handleSort}
                 >
                   <option value="createdAt:desc">Dernières nouveautés</option>
-                  <option value="price:asc">Prix : par ordre croissant</option>
+                  <option value="price:asc">
+                    Prix <BsSortNumericDown />
+                  </option>
                   <option value="price:desc">
-                    Prix : par ordre décroissant
+                    Prix <BsSortNumericDownAlt />
                   </option>
                 </select>
               )}
