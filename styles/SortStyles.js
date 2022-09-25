@@ -108,12 +108,11 @@ export const ArtistsList = styled(motion.div)`
     font-size: 1.5rem;
     flex-wrap: wrap;
     gap: 2rem;
+    @media (max-width: 780px) {
+      justify-content: flex-start;
+    }
   }
   li {
     cursor: pointer;
-  }
-  @media (max-width: 780px) {
-    justify-content: flex-start;
-    align-items: flex-start;
   }
 `;
