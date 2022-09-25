@@ -117,7 +117,7 @@ export default function Cart() {
                       </h3>
                       <h3>{item.price} €</h3>
                       <Quantity>
-                        <span>Quantité :</span>
+                        <span style={{ fontSize: "1.5rem" }}>Quantité :</span>
                         <motion.button
                           style={{ fontSize: "2rem" }}
                           whileHover={{
