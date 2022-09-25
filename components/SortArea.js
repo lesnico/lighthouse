@@ -8,7 +8,7 @@ import { useStateContext } from "../lib/context";
 import { useQuery } from "urql";
 import { GET_LIST_ARTISTS_QUERY } from "../lib/query";
 import { AnimatePresence } from "framer-motion";
-import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function SortArea() {
   const {
@@ -32,7 +32,27 @@ export default function SortArea() {
   if (error) return;
 
   const listArtists = data.artists.data;
-  console.log(listArtists);
+
+  // Variants
+  const container = {
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.02,
+        delayChildren: 0.01,
+        duration: 0.01,
+        type: "tween",
+      },
+    },
+    hidden: { opacity: 0 },
+  };
+
+  const Content = {
+    visible: {
+      opacity: 1,
+    },
+  };
+
   return (
     <>
       <AnimatePresence mode="wait">
@@ -73,23 +93,35 @@ export default function SortArea() {
           {viewArtists && (
             <AnimatePresence>
               <ArtistsList
-                layout
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
               >
-                <ul>
-                  <li onClick={() => handleSearch("")}>Tous</li>
+                <motion.ul
+                  variants={container}
+                  initial="hidden"
+                  animate="visible"
+                >
+                  <motion.li
+                    initial="hidden"
+                    variants={Content}
+                    onClick={() => handleSearch("")}
+                  >
+                    Tous
+                  </motion.li>
                   {listArtists.map((artistItem) => (
-                    <li
+                    <motion.li
+                      initial="hidden"
+                      variants={Content}
                       key={artistItem.attributes.artist_name}
                       onClick={() =>
                         handleSearch(artistItem.attributes.artist_name)
                       }
                     >
                       {`${artistItem.attributes.artist_name} (${artistItem.attributes.products.data.length})`}
-                    </li>
+                    </motion.li>
                   ))}
-                </ul>
+                </motion.ul>
               </ArtistsList>
             </AnimatePresence>
           )}
