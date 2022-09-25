@@ -86,7 +86,7 @@ export default function SortArea() {
                         handleSearch(artistItem.attributes.artist_name)
                       }
                     >
-                      {artistItem.attributes.artist_name}
+                      {`${artistItem.attributes.artist_name} (${artistItem.attributes.products.data.length})`}
                     </li>
                   ))}
                 </ul>
