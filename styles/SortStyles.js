@@ -54,7 +54,7 @@ export const SearchInput = styled(motion.div)`
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0rem;
+    gap: 1rem;
     span {
       cursor: pointer;
     }
@@ -109,5 +109,9 @@ export const ArtistsList = styled(motion.div)`
   }
   li {
     cursor: pointer;
+    transition: color 0.2s ease;
+    &:hover {
+      color: var(--special);
+    }
   }
 `;
