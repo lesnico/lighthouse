@@ -76,20 +76,21 @@ export default function SortArea() {
             </div>
 
             <SearchInput>
-              <FiUsers />
               <div className="show-artists-btn">
+                <FiUsers />
                 <span onClick={() => setViewArtists(!viewArtists)}>
                   {viewArtists ? "Masquer les artistes" : "Liste des artistes"}
                 </span>
                 <p onClick={() => handleSearch("")}>{search}</p>
               </div>
-              <BsSortNumericDown />
+
               {search === "" && (
                 <select
                   name="filter-sort"
                   id="filter-sort"
                   onChange={handleSort}
                 >
+                  <BsSortNumericDown />
                   <option value="createdAt:desc">Dernières nouveautés</option>
                   <option value="price:asc">Prix : par ordre croissant</option>
                   <option value="price:desc">
