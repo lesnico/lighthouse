@@ -49,9 +49,12 @@ export default function SortArea() {
             </div>
 
             <SearchInput>
-              <span onClick={() => setViewArtists(!viewArtists)}>
-                {viewArtists ? "Masquer les artistes" : "Voir les artistes"}
-              </span>
+              <div className="show-artists-btn">
+                <span onClick={() => setViewArtists(!viewArtists)}>
+                  {viewArtists ? "Masquer les artistes" : "Voir les artistes"}
+                </span>{" "}
+                <p onClick={() => handleSearch("")}>{search}</p>
+              </div>
               <select name="filter-sort" id="filter-sort" onChange={handleSort}>
                 <option value="createdAt:desc">Dernières nouveautés</option>
                 {/* <option value="createdAt:desc">Les moins récents</option> */

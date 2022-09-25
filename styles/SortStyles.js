@@ -50,14 +50,31 @@ export const SearchInput = styled(motion.div)`
   font-size: 1.5rem;
   font-family: DM Sans, sans-serif;
   color: rgb(83, 83, 83);
-  span {
-    cursor: pointer;
-    padding: 1rem;
-    border-radius: 0.8rem;
-    transition: background 0.3s ease, color 0.3s ease;
-    &:hover {
-      background: var(--special);
-      color: white;
+  .show-artists-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0rem;
+    span {
+      cursor: pointer;
+      padding: 1rem;
+      border-radius: 0.8rem;
+      transition: background 0.3s ease, color 0.3s ease;
+      &:hover {
+        background: var(--special);
+        color: white;
+      }
+    }
+    p {
+      font-size: 1.5rem !important;
+      font-family: DM Sans, sans-serif !important;
+      text-transform: none !important;
+      margin: 0rem 1rem 0rem 0rem;
+      &:hover {
+        background: transparent;
+        text-decoration: line-through;
+        cursor: pointer;
+      }
     }
   }
   select {
