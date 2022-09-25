@@ -41,7 +41,7 @@ export const FooterStyleInner = styled(motion.div)`
       letter-spacing: -1px;
       margin-bottom: 1rem;
       font-weight: 700;
-      color: #2d2d2d;
+      color: var(--primary);
     }
   }
   p {

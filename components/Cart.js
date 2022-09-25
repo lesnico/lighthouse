@@ -119,6 +119,7 @@ export default function Cart() {
                       <Quantity>
                         <span>Quantité :</span>
                         <motion.button
+                          style={{ fontSize: "2rem" }}
                           whileHover={{
                             scale: 0.9,
                             transition: { duration: 0.3 },

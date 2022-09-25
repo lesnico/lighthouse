@@ -70,7 +70,7 @@ export const DetailsStyleInner = styled(motion.div)`
 export const AlbumInfoCont = styled(motion.div)`
   width: 100%;
   min-height: 20vh;
-  background-color: #e1eff7;
+  background-color: var(--special2);
   border-radius: 0.8rem;
   display: flex;
   align-items: center;

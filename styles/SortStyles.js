@@ -24,13 +24,13 @@ export const SortStyledInner = styled(motion.div)`
   div {
     p {
       letter-spacing: -7%;
-      color: #808080;
+      color: var(--secondary);
       font-weight: 700;
       font-size: 1.5rem;
     }
     p:first-child {
       font-size: 2.6rem;
-      color: #2d2d2d;
+      color: var(--primary);
       font-family: "Signika", sans-serif;
       text-transform: uppercase;
     }
