@@ -57,13 +57,6 @@ export const SearchInput = styled(motion.div)`
     gap: 0rem;
     span {
       cursor: pointer;
-      padding: 1rem;
-      border-radius: 0.8rem;
-      transition: background 0.3s ease, color 0.3s ease;
-      &:hover {
-        background: var(--special);
-        color: white;
-      }
     }
     p {
       font-size: 1.5rem !important;
