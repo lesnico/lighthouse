@@ -80,6 +80,11 @@ export const SearchInput = styled(motion.div)`
     font-family: DM Sans, sans-serif;
     margin: 0px -5px;
   }
+  .select-cont {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
   @media (max-width: 660px) {
     margin: 1rem 0rem;
   }

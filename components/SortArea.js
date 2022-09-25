@@ -83,20 +83,24 @@ export default function SortArea() {
                 </span>
                 <p onClick={() => handleSearch("")}>{search}</p>
               </div>
-              <BsSortNumericDown />
-              {search === "" && (
-                <select
-                  name="filter-sort"
-                  id="filter-sort"
-                  onChange={handleSort}
-                >
-                  <option value="createdAt:desc">Dernières nouveautés</option>
-                  <option value="price:asc">Prix : par ordre croissant</option>
-                  <option value="price:desc">
-                    Prix : par ordre décroissant
-                  </option>
-                </select>
-              )}
+              <div className="selectCont">
+                <BsSortNumericDown />
+                {search === "" && (
+                  <select
+                    name="filter-sort"
+                    id="filter-sort"
+                    onChange={handleSort}
+                  >
+                    <option value="createdAt:desc">Dernières nouveautés</option>
+                    <option value="price:asc">
+                      Prix : par ordre croissant
+                    </option>
+                    <option value="price:desc">
+                      Prix : par ordre décroissant
+                    </option>
+                  </select>
+                )}
+              </div>
             </SearchInput>
           </SortStyledInner>
 
