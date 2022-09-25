@@ -113,6 +113,7 @@ export const ArtistsList = styled(motion.div)`
     gap: 2rem;
     @media (max-width: 780px) {
       justify-content: flex-start;
+      align-items: flex-start;
     }
   }
   li {
