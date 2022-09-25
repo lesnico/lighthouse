@@ -9,23 +9,12 @@ import { useQuery } from "urql";
 import { GET_LIST_ARTISTS_QUERY } from "../lib/query";
 import { AnimatePresence } from "framer-motion";
 import { motion } from "framer-motion";
-import {
-  BsSortNumericDown,
-  BsSortNumericDownAlt,
-  BsSortAlphaUp,
-  BsSortAlphaUpAlt,
-} from "react-icons/bs";
+import { BsSortNumericDown } from "react-icons/bs";
 import { FiUsers } from "react-icons/fi";
 
 export default function SortArea() {
-  const {
-    search,
-    setSearch,
-    handleSearch,
-    handleSort,
-    viewArtists,
-    setViewArtists,
-  } = useStateContext();
+  const { search, handleSearch, handleSort, viewArtists, setViewArtists } =
+    useStateContext();
 
   //Fetch Graphql data
   const [results] = useQuery({
@@ -83,23 +72,20 @@ export default function SortArea() {
                 </span>
                 <p onClick={() => handleSearch("")}>{search}</p>
               </div>
-              <div className="selectCont">
+              <div className="select-cont">
                 <BsSortNumericDown />
-                {search === "" && (
-                  <select
-                    name="filter-sort"
-                    id="filter-sort"
-                    onChange={handleSort}
-                  >
-                    <option value="createdAt:desc">Dernières nouveautés</option>
-                    <option value="price:asc">
-                      Prix : par ordre croissant
-                    </option>
-                    <option value="price:desc">
-                      Prix : par ordre décroissant
-                    </option>
-                  </select>
-                )}
+
+                <select
+                  name="filter-sort"
+                  id="filter-sort"
+                  onChange={handleSort}
+                >
+                  <option value="createdAt:desc">Dernières nouveautés</option>
+                  <option value="price:asc">Prix : par ordre croissant</option>
+                  <option value="price:desc">
+                    Prix : par ordre décroissant
+                  </option>
+                </select>
               </div>
             </SearchInput>
           </SortStyledInner>
