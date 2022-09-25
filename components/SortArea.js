@@ -72,18 +72,11 @@ export default function SortArea() {
               <div className="show-artists-btn">
                 <span onClick={() => setViewArtists(!viewArtists)}>
                   {viewArtists ? "Masquer les artistes" : "Voir les artistes"}
-                </span>{" "}
+                </span>
                 <p onClick={() => handleSearch("")}>{search}</p>
               </div>
               <select name="filter-sort" id="filter-sort" onChange={handleSort}>
                 <option value="createdAt:desc">Dernières nouveautés</option>
-                {/* <option value="createdAt:desc">Les moins récents</option> */
-                /* <option value="artist.artist_name:asc">Artistes &uarr;</option>
-                <option value="artist.artist_name:desc">
-                  Artistes &#8595;
-                </option>
-                <option value="title:asc">Albums &uarr;</option>
-                <option value="title:desc">Albums &#8595;</option> */}
                 <option value="price:asc">Prix : par ordre croissant</option>
                 <option value="price:desc">Prix : par ordre décroissant</option>
               </select>
@@ -103,6 +96,7 @@ export default function SortArea() {
                   animate="visible"
                 >
                   <motion.li
+                    className={search === "" ? "active" : ""}
                     initial="hidden"
                     variants={Content}
                     onClick={() => handleSearch("")}
@@ -110,16 +104,25 @@ export default function SortArea() {
                     Tous
                   </motion.li>
                   {listArtists.map((artistItem) => (
-                    <motion.li
-                      initial="hidden"
-                      variants={Content}
-                      key={artistItem.attributes.artist_name}
-                      onClick={() =>
-                        handleSearch(artistItem.attributes.artist_name)
-                      }
-                    >
-                      {`${artistItem.attributes.artist_name} (${artistItem.attributes.products.data.length})`}
-                    </motion.li>
+                    <>
+                      {artistItem.attributes.products.data.length > 0 && (
+                        <motion.li
+                          className={
+                            search === artistItem.attributes.artist_name
+                              ? "active"
+                              : ""
+                          }
+                          initial="hidden"
+                          variants={Content}
+                          key={artistItem.attributes.artist_name}
+                          onClick={() =>
+                            handleSearch(artistItem.attributes.artist_name)
+                          }
+                        >
+                          {`${artistItem.attributes.artist_name} (${artistItem.attributes.products.data.length})`}
+                        </motion.li>
+                      )}
+                    </>
                   ))}
                 </motion.ul>
               </ArtistsList>

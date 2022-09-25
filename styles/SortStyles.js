@@ -94,6 +94,10 @@ export const ArtistsList = styled(motion.div)`
   width: 88%;
   padding: 2rem 0rem 0rem 0rem;
   color: var(--primary);
+  .active {
+    color: var(--special);
+    text-decoration: underline;
+  }
   ul {
     font-weight: 500;
     list-style: none;
