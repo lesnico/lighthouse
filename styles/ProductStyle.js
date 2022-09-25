@@ -8,12 +8,13 @@ export const ProductStyles = styled(motion.div)`
   flex-direction: column;
   padding: 1.5rem;
   transition: transform 0.3s ease;
-  border-radius: 1rem;
+  border-radius: 0.8rem;
   cursor: pointer;
   z-index: 100;
   img {
     width: 100%;
     height: 100%;
+    border-radius: 0.8rem;
   }
   h2 {
     font-family: "Signika", sans-serif;
