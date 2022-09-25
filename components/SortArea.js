@@ -68,7 +68,11 @@ export default function SortArea() {
               <div className="show-artists-btn">
                 <FiUsers />
                 <span onClick={() => setViewArtists(!viewArtists)}>
-                  {viewArtists ? "Masquer les artistes" : "Liste des artistes"}
+                  {search === "" &&
+                    (viewArtists
+                      ? "Masquer les artistes"
+                      : "Liste des artistes")}
+                  {!search === "" && search}
                 </span>
                 <p onClick={() => handleSearch("")}>{search}</p>
               </div>

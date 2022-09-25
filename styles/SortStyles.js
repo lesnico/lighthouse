@@ -45,7 +45,7 @@ export const SortStyledInner = styled(motion.div)`
 export const SearchInput = styled(motion.div)`
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+
   gap: 1rem;
   font-size: 1.5rem;
   font-family: DM Sans, sans-serif;
@@ -54,7 +54,7 @@ export const SearchInput = styled(motion.div)`
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
     span {
       cursor: pointer;
     }
@@ -63,6 +63,7 @@ export const SearchInput = styled(motion.div)`
       font-family: DM Sans, sans-serif !important;
       text-transform: none !important;
       margin: 0rem 1rem 0rem 0rem;
+
       color: var(--special);
       &:hover {
         text-decoration: line-through;
