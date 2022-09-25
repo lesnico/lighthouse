@@ -78,6 +78,7 @@ export const SearchInput = styled(motion.div)`
     color: rgb(83, 83, 83);
     font-size: 1.5rem;
     font-family: DM Sans, sans-serif;
+    margin: 0px -5px;
   }
   @media (max-width: 660px) {
     margin: 1rem 0rem;
