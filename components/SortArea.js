@@ -1,11 +1,24 @@
-import { SortStyled, SortStyledInner, SearchInput } from "../styles/SortStyles";
+import {
+  SortStyled,
+  SortStyledInner,
+  SearchInput,
+  ArtistsList,
+} from "../styles/SortStyles";
 import { useStateContext } from "../lib/context";
 import { useQuery } from "urql";
 import { GET_LIST_ARTISTS_QUERY } from "../lib/query";
 import { AnimatePresence } from "framer-motion";
+import Link from "next/link";
 
 export default function SortArea() {
-  const { search, handleSearch, handleSort } = useStateContext();
+  const {
+    search,
+    setSearch,
+    handleSearch,
+    handleSort,
+    viewArtists,
+    setViewArtists,
+  } = useStateContext();
 
   //Fetch Graphql data
   const [results] = useQuery({
@@ -19,7 +32,7 @@ export default function SortArea() {
   if (error) return;
 
   const listArtists = data.artists.data;
-
+  console.log(listArtists);
   return (
     <>
       <AnimatePresence mode="wait">
@@ -36,6 +49,9 @@ export default function SortArea() {
             </div>
 
             <SearchInput>
+              <span onClick={() => setViewArtists(!viewArtists)}>
+                {viewArtists ? "Masquer les artistes" : "Voir les artistes"}
+              </span>
               <select name="filter-sort" id="filter-sort" onChange={handleSort}>
                 <option value="createdAt:desc">Dernières nouveautés</option>
                 {/* <option value="createdAt:desc">Les moins récents</option> */
@@ -50,6 +66,29 @@ export default function SortArea() {
               </select>
             </SearchInput>
           </SortStyledInner>
+
+          {viewArtists && (
+            <AnimatePresence>
+              <ArtistsList
+                layout
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+              >
+                <ul>
+                  <li onClick={() => handleSearch("")}>Tous</li>
+                  {listArtists.map((artistItem) => (
+                    <li
+                      onClick={() =>
+                        handleSearch(artistItem.attributes.artist_name)
+                      }
+                    >
+                      {artistItem.attributes.artist_name}
+                    </li>
+                  ))}
+                </ul>
+              </ArtistsList>
+            </AnimatePresence>
+          )}
         </SortStyled>
       </AnimatePresence>
     </>
