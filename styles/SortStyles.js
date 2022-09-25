@@ -54,7 +54,7 @@ export const SearchInput = styled(motion.div)`
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1rem;
     span {
       cursor: pointer;
     }
