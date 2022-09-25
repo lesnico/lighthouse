@@ -22,7 +22,7 @@ export const DetailsStyleInner = styled(motion.div)`
     font-size: 2.6rem;
     letter-spacing: 2%;
     font-weight: 700;
-    color: #2d2d2d;
+    color: var(--primary);
     text-transform: capitalize;
   }
   h2 {
@@ -30,7 +30,7 @@ export const DetailsStyleInner = styled(motion.div)`
     font-size: 2rem;
     letter-spacing: 2%;
     font-weight: 400;
-    color: #808080;
+    color: var(--secondary);
     padding: 0 0 1rem 0;
   }
   h3 {
@@ -38,14 +38,14 @@ export const DetailsStyleInner = styled(motion.div)`
     font-size: 2rem;
     letter-spacing: 2%;
     font-weight: 700;
-    color: #2d2d2d;
+    color: var(--primary);
     padding: 0 0 1rem 0;
   }
   p {
     font-size: 1.5rem;
     letter-spacing: 2%;
     font-weight: 400;
-    color: #808080;
+    color: var(--secondary);
     text-align: justify;
   }
   .tracklist-flex-cont {
@@ -148,7 +148,7 @@ export const Quantity = styled.div`
   font-size: 2rem;
   font-family: "Signika", sans-serif;
   span {
-    color: #2d2d2d;
+    color: var(--primary);
     font-weight: 700;
   }
   button {
@@ -163,7 +163,7 @@ export const Quantity = styled.div`
     width: 1rem;
     font-size: 2rem;
     text-align: center;
-    color: #2d2d2d;
+    color: var(--primary);
   }
 
   svg {
@@ -173,7 +173,7 @@ export const Quantity = styled.div`
 
 export const Buy = styled(motion.div)`
   width: 50%;
-  background: var(--action);
+  background: var(--special);
   color: white;
   font-size: 1.5rem;
   display: flex;
@@ -217,7 +217,7 @@ export const TracklistStyled = styled(motion.div)`
       gap: 1rem;
     }
     svg {
-      color: #2d2d2d;
+      color: var(--primary);
       font-size: 2rem;
       cursor: pointer;
       transition: color, 0.2s ease;
@@ -310,7 +310,7 @@ export const MoreProductTitle = styled(motion.div)`
     font-size: 2rem;
     letter-spacing: 2%;
     font-weight: 700 !important;
-    color: #2d2d2d;
+    color: var(--primary);
     padding: 0 0 1rem 0;
   }
 `;

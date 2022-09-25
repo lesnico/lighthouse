@@ -93,6 +93,7 @@ export const SearchInput = styled(motion.div)`
 export const ArtistsList = styled(motion.div)`
   width: 88%;
   padding: 2rem 0rem 0rem 0rem;
+  color: var(--primary);
   ul {
     font-weight: 500;
     list-style: none;

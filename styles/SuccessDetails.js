@@ -35,7 +35,7 @@ export const SuccessHeader = styled(motion.div)`
   p {
     font-size: 1.5rem;
     font-weight: normal;
-    color: #808080;
+    color: var(--secondary);
     padding: 0 0 2rem 0;
 
     span {
@@ -57,7 +57,7 @@ export const SuccessInfos = styled(motion.div)`
   p {
     font-size: 1.5rem;
     font-weight: 400;
-    color: #808080;
+    color: var(--secondary);
     line-height: 2rem;
   }
   .success-title {
@@ -83,7 +83,7 @@ export const SuccessProducts = styled(motion.div)`
 
 export const KeepShopping = styled(motion.div)`
   width: 30%;
-  background: var(--action);
+  background: var(--special);
   color: white;
   font-size: 1.5rem;
   display: flex;

@@ -109,14 +109,14 @@ export const Logo = styled(motion.div)`
   }
   h1 {
     font-size: 3.5rem;
-    color: #464646;
+    color: var(--primary);
     letter-spacing: -3px;
   }
   h3 {
     font-size: 1.8rem;
     font-weight: normal;
     letter-spacing: -1px;
-    color: var(--action);
+    color: var(--special);
   }
   img {
     height: 10vh;
@@ -129,7 +129,7 @@ export const Logo = styled(motion.div)`
   @media (max-width: 750px) {
     h1 {
       font-size: 3rem;
-      color: #464646;
+      color: var(--primary);
       letter-spacing: -3px;
     }
     h3 {
