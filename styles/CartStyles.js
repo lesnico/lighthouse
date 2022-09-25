@@ -45,6 +45,9 @@ export const CartCard = styled(motion.div)`
   margin: 2rem 0rem;
   img {
     width: 10rem;
+    @media (max-width: 780px) {
+      width: 8rem;
+    }
   }
 `;
 
