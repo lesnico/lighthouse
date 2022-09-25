@@ -75,7 +75,7 @@ export default function SortArea() {
                 </span>
                 <p onClick={() => handleSearch("")}>{search}</p>
               </div>
-              {handleSearch === "" && (
+              {search === "" && (
                 <select
                   name="filter-sort"
                   id="filter-sort"
