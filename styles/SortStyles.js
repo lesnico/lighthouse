@@ -72,6 +72,11 @@ export const SearchInput = styled(motion.div)`
   @media (max-width: 660px) {
     margin: 1rem 0rem;
   }
+  @media (max-width: 780px) {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
 `;
 
 export const ArtistsList = styled(motion.div)`
