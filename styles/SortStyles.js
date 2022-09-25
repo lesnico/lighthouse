@@ -63,8 +63,8 @@ export const SearchInput = styled(motion.div)`
       font-family: DM Sans, sans-serif !important;
       text-transform: none !important;
       margin: 0rem 1rem 0rem 0rem;
+      color: var(--special);
       &:hover {
-        background: transparent;
         text-decoration: line-through;
         cursor: pointer;
       }
@@ -78,7 +78,6 @@ export const SearchInput = styled(motion.div)`
     color: rgb(83, 83, 83);
     font-size: 1.5rem;
     font-family: DM Sans, sans-serif;
-    margin: 0px -5px;
   }
   .select-cont {
     display: flex;
