@@ -37,16 +37,16 @@ export default function SortArea() {
 
             <SearchInput>
               <select name="filter-sort" id="filter-sort" onChange={handleSort}>
-                <option value="createdAt:desc">Derniers ajouts</option>
-                {/* <option value="createdAt:desc">Les moins récents</option> */}
-                <option value="artist.artist_name:asc">Artistes &uarr;</option>
+                <option value="createdAt:desc">Dernières nouveautés</option>
+                {/* <option value="createdAt:desc">Les moins récents</option> */
+                /* <option value="artist.artist_name:asc">Artistes &uarr;</option>
                 <option value="artist.artist_name:desc">
                   Artistes &#8595;
                 </option>
                 <option value="title:asc">Albums &uarr;</option>
-                <option value="title:desc">Albums &#8595;</option>
-                <option value="price:asc">Prix &uarr;</option>
-                <option value="price:desc">Prix &#8595;</option>
+                <option value="title:desc">Albums &#8595;</option> */}
+                <option value="price:asc">Prix : par ordre croissant</option>
+                <option value="price:desc">Prix : par ordre décroissant</option>
               </select>
             </SearchInput>
           </SortStyledInner>
