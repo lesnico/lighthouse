@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { TracklistStyled, VideoIframe } from "../styles/ProductDetails";
 import { FaYoutube } from "react-icons/fa";
 import { v4 as uuidv4 } from "uuid";
@@ -8,7 +7,7 @@ import { motion } from "framer-motion";
 import { useStateContext } from "../lib/context";
 
 export default function Tracklist({ tracklist }) {
-  const { showVideo, setShowVideo, ytVideoGen, currentVideo, setCurrentVideo } =
+  const { showVideo, setShowVideo, currentVideo, setCurrentVideo } =
     useStateContext();
 
   const videoHandling = (videoItem) => {

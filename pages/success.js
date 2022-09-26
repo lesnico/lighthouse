@@ -9,7 +9,6 @@ import {
   KeepShopping,
 } from "../styles/SuccessDetails";
 import Head from "next/head";
-import { FaShoppingCart } from "react-icons/fa";
 import Link from "next/link";
 import Footer from "../components/Footer";
 

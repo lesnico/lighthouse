@@ -6,7 +6,6 @@ import SortArea from "../components/SortArea";
 import { motion } from "framer-motion";
 import { useRouter } from "next/router";
 import { Toaster } from "react-hot-toast";
-import Footer from "../components/Footer";
 
 const client = createClient({ url: process.env.NEXT_PUBLIC_BACKEND_API });
 

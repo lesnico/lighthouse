@@ -14,7 +14,6 @@ import { FaShoppingCart } from "react-icons/fa";
 import { AiFillMinusCircle, AiFillPlusCircle } from "react-icons/ai";
 import getStripe from "../lib/getStripe";
 import { motion } from "framer-motion";
-import { BsFillCartCheckFill } from "react-icons/bs";
 import { AiOutlineClose } from "react-icons/ai";
 
 // Animation Variants

@@ -1,7 +1,6 @@
 import { ProductStyles } from "../styles/ProductStyle";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { useStateContext } from "../lib/context";
 
 export default function Product({ product }) {
   const { title, price, image, artist, slug } = product.attributes;

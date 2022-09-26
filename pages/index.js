@@ -6,7 +6,6 @@ import { Gallery, GalleryCont } from "../styles/Gallery";
 import { useStateContext } from "../lib/context";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
-import Loading from "../public/loading.svg";
 import Footer from "../components/Footer";
 
 export default function Home() {
