@@ -33,7 +33,11 @@ export default function Footer() {
 
             <BsInstagram />
 
-            <BsYoutube />
+            <Link href="https://www.youtube.com/watch?v=mGh1a5mcuyg">
+              <span>
+                <BsYoutube />
+              </span>
+            </Link>
           </div>
           <div>
             <span onClick={() => window.scrollTo(0, 0)}>

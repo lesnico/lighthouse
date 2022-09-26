@@ -6,7 +6,8 @@ import { useStateContext } from "../lib/context";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function Nav() {
-  const { showCart, setShowCart, totalQuantities } = useStateContext();
+  const { showCart, setShowCart, totalQuantities, imageHover, setImageHover } =
+    useStateContext();
   // Variants
   const LogoCont = {
     visible: {
@@ -58,7 +59,11 @@ export default function Nav() {
             animate="visible"
             variants={LogoCont}
           >
-            <motion.img src="/logo.svg" variants={LogoItem} />
+            <motion.img
+              whileHover={() => setImageHover(true)}
+              src={imageHover ? "/logo-light.svg" : "/logo.svg"}
+              variants={LogoItem}
+            />
             <div>
               <motion.h1 variants={LogoItem}>LIGHTHOUSE</motion.h1>
               <motion.h3 variants={LogoItem2}>RECORD SHOP</motion.h3>
